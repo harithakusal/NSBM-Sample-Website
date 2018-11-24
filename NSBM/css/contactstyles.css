@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    font-family: segoe UI;
+}
+
+.full{
+	margin: auto;
+	width: 100%;
+
+}
+
+.topbar{
+	width: 100%;
+	background: #3AB54A;
+    text-align: center;
+}
+
+.topbar ul{
+	list-style: none;
+}
+
+.topbar ul li{
+	padding: 10 120px;
+	display: inline-block;
+}
+
+.topbar ul li a{
+	color: black;
+	text-decoration: none;  
+}
+
+.topbar ul li a:hover{
+    color: blue;
+}
+
+
+.logo{
+	float: left;
+}
+
+
+.socialmedia{
+	float: right;
+	margin-top: 25px;
+}
+
+
+.socialmedia ul{
+	list-style: none; 
+}
+
+.socialmedia ul li{
+	display: inline; 
+}
+
+.socialmedia ul li a{
+    padding: 100px;
+}
+
+.menu{
+	background: #1B579F;
+	overflow: auto;
+	width: 100%;
+    font-weight: bold; 
+}
+
+
+.menu ul{
+	list-style: none;
+}
+
+
+.menu ul li{
+	display: inline;
+}
+
+
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	margin-left: 90px;
+}
+
+.menu ul li a:hover{
+    color: silver;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+}
+
+

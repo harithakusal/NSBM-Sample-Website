@@ -1,0 +1,87 @@
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> NSBM Green University Town </title>
+	<link rel="stylesheet" type="text/css" href="css/campuslifestyles.css">
+</head>
+<body>
+
+<div class="full">
+	<div class="topbar">
+		<ul>
+			<li> <a href="http://lmsnew.nsbm.lk/" target="_blank"> Log In </a> </li>
+			<li> <a href="contact.html"> Contact </a> </li>
+			<li> <a href="about.html"> About </a> </li>
+		</ul>
+	</div> <!--end of topbar-->
+    
+	<div class="header">
+		<div class="logo">
+			<img src="images/logo.jpg" width="250px">
+		</div> <!-- end of logo-->
+
+		<div class="socialmedia">
+			<ul>
+				<li> <a href="https://www.facebook.com/nsbm.lk/" target="_blank"> <img src="icons/facebook.png" width="50px"> </a> </li>
+				<li> <a href="https://twitter.com/NSBM_SriLanka?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> <img src="icons/twitter.png" width="50px"> </a> </li>
+				<li> <a href="https://www.youtube.com/channel/UCHsodhRyiuri2jD7H7nfsRg" target="_blank"> <img src="icons/youtube.png" width="50px"> </a> </li>
+				<li> <a href="https://www.instagram.com/nsbm_srilanka/" target="_blank"> <img src="icons/instagram.png" width="50px"> </a> </li>
+			</ul>
+		</div> <!--end of socialmedia-->
+	</div> <!--end of header-->
+
+	<div class="menu">
+		<ul>
+			<li> <a href="home.html"> HOME </a> </li>
+			<li> <a href="faculties.html"> FACULTIES </a> </li>	
+			<li> <a href="campuslife.html"> CAMPUS LIFE </a> </li>
+			<li> <a href="enrollnow.html"> ENROLL NOW </a> </li>
+			<li> <a href="news.html"> NEWS & MEDIA </a> </li>
+			<li> <a href="programmes.html"> PROGRAMMES </a> </li>
+		</ul>
+	</div> <!--end of menu-->
+
+	<h1> CAMPUS LIFE </h1>
+	
+	<!-- Slide Show -->
+	<section class="slideshow">
+	<img class="mySlides" src="images/slideshows/wesak.jpg" width="80%" >
+	<img class="mySlides" src="images/slideshows/xmas.jpg"  width="80%" >
+	<img class="mySlides" src="images/slideshows/awurudu.jpg"  width="80%">
+	<img class="mySlides" src="images/slideshows/poson.jpg"  width="80%">
+	<img class="mySlides" src="images/slideshows/talent show.jpg" width="80%">
+	<img class="mySlides" src="images/slideshows/walk.jpg" width="80%">
+	</section>
+	
+	<script>
+// Automatic Slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+<div class="campuslifetext" style="max-width:1000px">
+<h3>More than just knwoledge!</h3>
+<p>Your education goes well beyond your coursework. Extracurricular activities can form a vital part of your experience here at NSBM, 
+creating unique opportunities for friendship and learning.Your activities complement your studies. Your commitment level is entirely up to you. life at NSBM is enriched
+with numerous events and cultural activities. This one-of-a-kind university is the place for all students to showcasw their skills in music, dance, art, and theatre. 
+It also provides opportunities for students to get exposure to different ethnic, religious and cultural activities. “We Got Talent”, “Siyapathsiya Udanaya”, Christmas Carols, NSBM Saddharmaloka Vesak Zone, “Aloko Udapadi – Poson Bethi Gee Saraniya” and NSBM Walk are some of those exciting activities.
+ The objective of organizing these events is to provide opportunities for students to develop and identify their skills and creativity while ensuring that NSBM Green University Town produces individuals who respect different cultures.</p>
+
+	
+</div> <!-- end of wrapper-->
+
+</body>
+</html>

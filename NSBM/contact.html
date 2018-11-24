@@ -1,0 +1,93 @@
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> NSBM Green University Town </title>
+	<link rel="stylesheet" type="text/css" href="css/contactstyles.css">
+</head>
+<body>
+
+<div class="full">
+	<div class="topbar">
+		<ul>
+			<li> <a href="http://lmsnew.nsbm.lk/" target="_blank"> Log In </a> </li>
+			<li> <a href="contact.html"> Contact </a> </li>
+			<li> <a href="about.html"> About </a> </li>
+		</ul>
+	</div> <!--end of topbar-->
+
+	<div class="header">
+		<div class="logo">
+			<img src="images/logo.jpg" width="250px">
+		</div> <!-- end of logo-->
+
+		<div class="socialmedia">
+			<ul>
+				<li> <a href="https://www.facebook.com/nsbm.lk/" target="_blank"> <img src="icons/facebook.png" width="50px"> </a> </li>
+				<li> <a href="https://twitter.com/NSBM_SriLanka?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> <img src="icons/twitter.png" width="50px"> </a> </li>
+				<li> <a href="https://www.youtube.com/channel/UCHsodhRyiuri2jD7H7nfsRg" target="_blank"> <img src="icons/youtube.png" width="50px"> </a> </li>
+				<li> <a href="https://www.instagram.com/nsbm_srilanka/" target="_blank"> <img src="icons/instagram.png" width="50px"> </a> </li>
+			</ul>
+		</div> <!--end of socialmedia-->
+	</div> <!--end of header-->
+
+	<div class="menu">
+		<ul>
+			<li> <a href="home.html"> HOME </a> </li>
+			<li> <a href="faculties.html"> FACULTIES </a> </li>
+			<li> <a href="campuslife.html"> CAMPUS LIFE </a> </li>
+			<li> <a href="enrollnow.html"> ENROLL NOW </a> </li>
+			<li> <a href="news.html"> NEWS & MEDIA </a> </li>
+			<li> <a href="programmes.html"> PROGRAMMES </a> </li>
+		</ul>
+	</div> <!--end of menu-->
+
+	<!----Contact us form---->
+
+	<div class="container">
+	<div style="text-align:center">
+    <h2>Contact us</h2>
+    <p>Connect with us today and start building your future!</p>
+	</div>
+	<div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+    <div class="column">
+      <form action="php/submitContact.php" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="sri lanka">Sri Lanka</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Initialize Google Maps -->
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+</div> <!-- end of wrapper-->
+
+</body>
+</html>

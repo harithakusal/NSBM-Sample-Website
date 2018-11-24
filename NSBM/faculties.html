@@ -1,0 +1,83 @@
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> NSBM Green University Town </title>
+	<link rel="stylesheet" type="text/css" href="css/facultiesstyles.css">
+</head>
+<body>
+
+<div class="full">
+	<div class="topbar">
+		<ul>
+			<li> <a href="http://lmsnew.nsbm.lk/" target="_blank"> Log In </a> </li>
+			<li> <a href="contact.html"> Contact </a> </li>
+			<li> <a href="about.html"> About </a> </li>
+		</ul>
+	</div> <!--end of topbar-->
+    
+	<div class="header">
+		<div class="logo">
+			<img src="images/logo.jpg" width="250px">
+		</div> <!-- end of logo-->
+
+		<div class="socialmedia">
+			<ul>
+				<li> <a href="https://www.facebook.com/nsbm.lk/" target="_blank"> <img src="icons/facebook.png" width="50px"> </a> </li>
+				<li> <a href="https://twitter.com/NSBM_SriLanka?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> <img src="icons/twitter.png" width="50px"> </a> </li>
+				<li> <a href="https://www.youtube.com/channel/UCHsodhRyiuri2jD7H7nfsRg" target="_blank"> <img src="icons/youtube.png" width="50px"> </a> </li>
+				<li> <a href="https://www.instagram.com/nsbm_srilanka/" target="_blank"> <img src="icons/instagram.png" width="50px"> </a> </li>
+			</ul>
+		</div> <!--end of socialmedia-->
+	</div> <!--end of header-->
+
+	<div class="menu">
+		<ul>
+			<li> <a href="home.html"> HOME </a> </li>
+			<li> <a href="faculties.html"> FACULTIES </a> </li>	
+			<li> <a href="campuslife.html"> CAMPUS LIFE </a> </li>
+			<li> <a href="enrollnow.html"> ENROLL NOW </a> </li>
+			<li> <a href="news.html"> NEWS & MEDIA </a> </li>
+			<li> <a href="programmes.html"> PROGRAMMES </a> </li>
+		</ul>
+	</div> <!--end of menu-->
+
+	<center><h1> FACULTIES </h1></center>
+	
+	<!-- Slide Show -->
+	<center><section>
+	<img class="mySlides" src="images/slideshows/computing.jpg" height="550" width="1500" >
+	<img class="mySlides" src="images/slideshows/business.jpg" height="550" width="1500" >
+	<img class="mySlides" src="images/slideshows/lec hall.jpg" height="550" width="1500">
+	</section></center>
+	
+	<script>
+// Automatic Slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+<center><section class="facultiesarticle" style="max-width:1000px">
+  <h2>Imagine Your Future With No Limits!</h2>
+  <p>From exemplary teaching to a campus experience packed with cultural and social opportunities,
+  here NSBM is the very best place to learn and get your future off to a flying start! NSBM green university comprise of three faculties namely :
+  School of business, school of computing and school of engineering. All these faculties are equipped with modern lecture halls to provide studednts an amazing
+  learning experince like no other. NSBM faculties and lecture halls are well equipped with modern facilities to provide students with a truly international learning experience</p>
+</section></center>
+	
+</div> <!-- end of wrapper-->
+
+</body>
+</html>
